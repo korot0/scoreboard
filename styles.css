@@ -17,6 +17,13 @@ body {
     margin: auto;
 }
 
+.home-container,
+.guest-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
 .header {
     color: EEEEEE;
     text-align: center;
