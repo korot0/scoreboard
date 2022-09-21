@@ -46,3 +46,9 @@ function newGame() {
     document.getElementById('guest-points').textContent = guestScore
     document.getElementById('home-points').textContent = homeScore
 }
+
+// if (homeScore > guestScore) {
+//     document.getElementById("home-points").style.backgroundColor="green"
+// } else if (homeScore < guestScore) {
+
+// }

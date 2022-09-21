@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: rgb(70, 70, 70);
+    background: rgb(24, 24, 24);
 }
 
 * {
@@ -11,13 +11,14 @@ body {
 .container {
     display: flex;
     justify-content: space-evenly;
-    background-color: #1B244A;
+    background-color: black;
     width: 575px;
     height: 385px;
     text-align: center;
     margin: auto;
     border-radius: 10px;
     border: 2px solid white;
+    margin-top: 30px;
 }
 
 .home-container,
@@ -43,10 +44,10 @@ body {
 
 #home-points,
 #guest-points {
-    color: #F94F6D;
+    color: #ff1b45;
     font-size: 90px;
     font-weight: 400px;
-    background-color: black;
+    background-color: rgb(24, 24, 24);
     border-radius: 5px;
     width: 155px;
     height: 120px;
@@ -59,10 +60,10 @@ body {
 }
 
 .btn {
-    border: 2px solid #9AABD8;
+    border: 2px solid #ffee00;
     border-radius: 5px;
-    background-color: #1B244A;
-    color: #9AABD8;
+    background-color: rgb(24, 24, 24);
+    color: #ffee00;
     font-size: 18px;
     padding: 9px 8px 9px 8px;
     font-family: 'Cursed Timer ULiL', sans-serif;
@@ -72,12 +73,11 @@ body {
 .btn:hover {
     background-color: black;
     transform: scale(1.1);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
 }
 
 .btn:active {
     background-color: black;
-    /* box-shadow: 0 5px white; */
     transform: translateY(4px);
 }
 
