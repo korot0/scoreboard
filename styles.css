@@ -65,18 +65,27 @@ body {
     color: #9AABD8;
     font-size: 18px;
     padding: 9px 8px 9px 8px;
-    font-family: 'Cursed Timer ULiL', sans-serif;                                  
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    transition-duration: 0.4s;                                  
+}
+
+.btn:hover {
+    background-color: black;
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn:active {
+    background-color: black;
+    /* box-shadow: 0 5px white; */
+    transform: translateY(4px);
 }
 
 #new-game {
     align-self: center;
 }
 
-
-
-
 /* container borders */
-
 /* .container {
     border: 3px solid rgb(0, 255, 21);
 }
