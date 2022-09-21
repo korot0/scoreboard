@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background: rgb(70, 70, 70);
 }
 
 * {
@@ -24,11 +25,18 @@ body {
     justify-content: center
 }
 
+.home-score-container,
+.guest-score-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header {
     color: EEEEEE;
     text-align: center;
     font-size: 40px;
     margin: 0;
+    margin-bottom: 21px;
 }
 
 .home-points,
@@ -40,21 +48,28 @@ body {
     border-radius: 5px;
     width: 155px;
     height: 120px;
-    /* font-family: 'Cursed Timer ULiL', sans-serif;        */
+    margin-bottom: 26px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    /* temporary solution VVV why does this happen??? */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
     border: 2px solid #9AABD8;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: #1B244A;
     color: #9AABD8;
-    /* font-family: 'Cursed Timer ULiL', sans-serif;                                   */
+    font-size: 18px;
+    padding: 9px 8px 9px 8px;
+    font-family: 'Cursed Timer ULiL', sans-serif;                                  
 }
 
 
 /* container borders */
 
-.container {
+/* .container {
     border: 3px solid rgb(0, 255, 21);
 }
 
@@ -66,4 +81,4 @@ button {
 .home-score-container,
 .guest-score-container {
     border: 3px solid rgb(255, 54, 188);
-}
+} */
