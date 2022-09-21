@@ -16,6 +16,8 @@ body {
     height: 385px;
     text-align: center;
     margin: auto;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
 .home-container,
@@ -39,8 +41,8 @@ body {
     margin-bottom: 21px;
 }
 
-.home-points,
-.guest-points {
+#home-points,
+#guest-points {
     color: #F94F6D;
     font-size: 90px;
     font-weight: 400px;
