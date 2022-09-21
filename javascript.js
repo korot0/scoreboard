@@ -37,3 +37,12 @@ function guestPlusThree() {
     guestScore += 3
     document.getElementById('guest-points').textContent = guestScore
 }
+
+//new game
+
+function newGame() {
+    homeScore = 0
+    guestScore = 0
+    document.getElementById('guest-points').textContent = guestScore
+    document.getElementById('home-points').textContent = homeScore
+}

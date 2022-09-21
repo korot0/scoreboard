@@ -10,7 +10,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #1B244A;
     width: 575px;
     height: 385px;
@@ -58,7 +58,7 @@ body {
     justify-content: center;
 }
 
-button {
+.btn {
     border: 2px solid #9AABD8;
     border-radius: 5px;
     background-color: #1B244A;
@@ -67,6 +67,12 @@ button {
     padding: 9px 8px 9px 8px;
     font-family: 'Cursed Timer ULiL', sans-serif;                                  
 }
+
+#new-game {
+    align-self: center;
+}
+
+
 
 
 /* container borders */
