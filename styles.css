@@ -34,7 +34,8 @@ body {
     justify-content: space-between;
 }
 
-.header {
+#guest-header,
+#home-header {
     color: EEEEEE;
     text-align: center;
     font-size: 40px;
