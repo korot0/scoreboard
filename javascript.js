@@ -19,8 +19,10 @@ function guestPoints(points) {
 
 // function addPoints(team, points) {
 //     team += points
+//     colorLeader()
 // }
 
+//Highlight the leader
 function colorLeader() {
 if (homeScore > guestScore) {
     homePointsEl.style.color="green"
@@ -34,7 +36,7 @@ if (homeScore > guestScore) {
 }
 }
 
-//new game
+//New game button
 function newGame() {
     homeScore = 0
     guestScore = 0
