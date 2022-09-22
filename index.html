@@ -1,8 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
-        <link href="http://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
-                
+        <link href="http://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">     
     </head>
     <body>
 
@@ -13,12 +12,12 @@
                     <h3 class="header">HOME</h3>
                 </div>
                 <div>
-                    <div id="home-points"></div>
+                    <div id="home-points">0</div>
                 </div>
                 <div class="home-score-container"> <!--pink-->
-                    <button class="btn" id="home-one" onclick="homePlusOne()">+1</button>
-                    <button class="btn" id="home-two" onclick="homePlusTwo()">+2</button>
-                    <button class="btn" id="home-three" onclick="homePlusThree()">+3</button>
+                    <button class="btn" onclick="homePoints(1)">+1</button>
+                    <button class="btn" onclick="homePoints(2)">+2</button>
+                    <button class="btn" onclick="homePoints(3)">+3</button>
                 </div>
             </div>
 
@@ -29,12 +28,12 @@
                     <h3 class="header">GUEST</h3>
                 </div>
                 <div>
-                    <div id="guest-points"></div>
+                    <div id="guest-points">0</div>
                 </div>
                 <div class="guest-score-container"> <!--pink-->
-                    <button class="btn" id="guest-one" onclick="guestPlusOne()">+1</button>
-                    <button class="btn" id="guest-two" onclick="guestPlusTwo()">+2</button>
-                    <button class="btn" id="guest-three" onclick="guestPlusThree()">+3</button>
+                    <button class="btn" onclick="guestPoints(1)">+1</button>
+                    <button class="btn" onclick="guestPoints(2)">+2</button>
+                    <button class="btn" onclick="guestPoints(3)">+3</button>
                 </div>
             </div>
 

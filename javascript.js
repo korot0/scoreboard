@@ -1,42 +1,20 @@
 let homeScore = 0
 let guestScore = 0
-document.getElementById('home-points').textContent = homeScore
-document.getElementById('guest-points').textContent = guestScore
 
 
 //home score
-
-function homePlusOne() {
-    homeScore += 1
-    document.getElementById('home-points').textContent = homeScore
-}
-
-function homePlusTwo() {
-    homeScore += 2
-    document.getElementById('home-points').textContent = homeScore
-}
-
-function homePlusThree() {
-    homeScore += 3
+function homePoints(points) {
+    homeScore += points
     document.getElementById('home-points').textContent = homeScore
 }
 
 //guest score
 
-function guestPlusOne() {
-    guestScore += 1
+function guestPoints(points) {
+    guestScore += points
     document.getElementById('guest-points').textContent = guestScore
 }
 
-function guestPlusTwo() {
-    guestScore += 2
-    document.getElementById('guest-points').textContent = guestScore
-}
-
-function guestPlusThree() {
-    guestScore += 3
-    document.getElementById('guest-points').textContent = guestScore
-}
 
 //new game
 
@@ -50,5 +28,4 @@ function newGame() {
 // if (homeScore > guestScore) {
 //     document.getElementById("home-points").style.backgroundColor="green"
 // } else if (homeScore < guestScore) {
-
 // }
