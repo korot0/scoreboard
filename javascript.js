@@ -1,8 +1,10 @@
+//Score var
 let homeScore = 0
 let guestScore = 0
 let homePointsEl = document.getElementById('home-points')
 let guestPointsEl = document.getElementById('guest-points')
 
+//Fouls var
 let homeFoulEl = document.getElementById('home-foul-points')
 let guestFoulEl = document.getElementById('guest-foul-points')
 let homeFouls = 0
@@ -17,7 +19,6 @@ function addPoints (team, points) {
         guestScore += points
         guestPointsEl.textContent = guestScore
     }
-
     colorLeader()
 }
 
@@ -58,6 +59,3 @@ function newGame() {
     guestFoulEl.textContent = guestFouls
     colorLeader()
 }
-//     team += points
-//     colorLeader()
-// }*/
