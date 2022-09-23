@@ -8,23 +8,20 @@ let guestFoulEl = document.getElementById('guest-foul-points')
 let homeFouls = 0
 let guestFouls = 0
 
+//Team score add
+function addPoints (team, points) {
+    if (team == 'home') {
+        homeScore += points
+        homePointsEl.textContent = homeScore
+    } else if (team == 'guest') {
+        guestScore += points
+        guestPointsEl.textContent = guestScore
+    }
 
-
-//home score
-function homePoints(points) {
-    homeScore += points
-    homePointsEl.textContent = homeScore
     colorLeader()
 }
 
-//guest score
-function guestPoints(points) {
-    guestScore += points
-    guestPointsEl.textContent = guestScore
-    colorLeader()
-}
-
-//foul score
+//Foul score add
 function foul(foulTeam) {
    if (foulTeam == 'home') {
         homeFouls++
@@ -33,10 +30,9 @@ function foul(foulTeam) {
         guestFouls++
         guestFoulEl.textContent = guestFouls
    }
-
 }
 
-//Highlight the leader
+//Highlight leader
 function colorLeader() {
 if (homeScore > guestScore) {
     homePointsEl.style.color="green"
@@ -50,7 +46,7 @@ if (homeScore > guestScore) {
 }
 }
 
-//New game button
+//New game btn
 function newGame() {
     homeScore = 0
     guestScore = 0
@@ -62,8 +58,6 @@ function newGame() {
     guestFoulEl.textContent = guestFouls
     colorLeader()
 }
-
-/*// function addPoints(team, points) {
 //     team += points
 //     colorLeader()
 // }*/
