@@ -11,9 +11,10 @@ body {
 .container {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     background-color: black;
     width: 575px;
-    height: 385px;
+    height: 585px;
     text-align: center;
     margin: auto;
     border-radius: 10px;
@@ -21,43 +22,11 @@ body {
     margin-top: 30px;
 }
 
-.home-container,
-.guest-container {
+.top-container,
+.middle-container,
+.bottom-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center
-}
-
-.home-score-container,
-.guest-score-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-#guest-header,
-#home-header {
-    color: EEEEEE;
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-    margin-bottom: 21px;
-}
-
-#home-points,
-#guest-points {
-    color: #ff1b45;
-    font-size: 90px;
-    font-weight: 400px;
-    background-color: rgb(24, 24, 24);
-    border-radius: 5px;
-    width: 155px;
-    height: 120px;
-    margin-bottom: 26px;
-    font-family: 'Cursed Timer ULiL', sans-serif;
-    /* temporary solution VVV why does this happen??? */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .btn {
@@ -66,7 +35,7 @@ body {
     background-color: rgb(24, 24, 24);
     color: #ffee00;
     font-size: 18px;
-    padding: 9px 8px 9px 8px;
+    padding: 8px;
     font-family: 'Cursed Timer ULiL', sans-serif;
     transition-duration: 0.4s;                                  
 }
@@ -81,17 +50,100 @@ body {
     transform: translateY(4px);
 }
 
-#new-game {
-    align-self: center;
+/* top item */
+.home-container,
+.guest-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
 }
 
-/* // */
-.container {
+.home-score-container,
+.guest-score-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#home-header,
+#guest-header {
+    color: EEEEEE;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#home-points,
+#guest-points {
+    color: #ff1b45;
+    font-size: 90px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+    width: 155px;
+    height: 120px;
+    margin-bottom: 10px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    /* temporary solution VVV why does this happen??? */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* middle item */
+#home-foul,
+#guest-foul {
+    color: EEEEEE;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#home-foul-points,
+#guest-foul-points {
+    color: #c70095;
+    font-size: 60px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+    width: 103px;
+    height: 80px;
+    margin-bottom: 10px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    /* temporary solution VVV why does this happen??? */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-container .btn {
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* bottom item */
+
+.bottom-container {
+    justify-content: center;
+    gap: 50px;
+}
+
+.home-foul-container,
+.guest-foul-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* /borders/ */
+/* .container {
     border: 3px solid rgb(0, 255, 21);
 }
 
 .home-container,
-.guest-container {
+.guest-container,
+.home-foul-container,
+.guest-foul-container {
     border: 3px solid salmon;
 }
 
@@ -99,3 +151,9 @@ body {
 .guest-score-container {
     border: 3px solid rgb(255, 54, 188);
 }
+
+.top-container,
+.middle-container,
+.bottom-container {
+    border: 3px solid rgb(0, 255, 21);
+} */
