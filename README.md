@@ -5,3 +5,4 @@ Stretch goals
 <!-- - Highlight the leader -->
 - Add more counters (e.g. period, <!--fouls-->, timer)
 <!-- - Change the design -->
+- Add blinking

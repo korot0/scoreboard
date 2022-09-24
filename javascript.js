@@ -15,7 +15,7 @@ function addPoints (team, points) {
     if (team == 'home') {
         homeScore += points
         homePointsEl.textContent = homeScore
-    } else if (team == 'guest') {
+    } else {
         guestScore += points
         guestPointsEl.textContent = guestScore
     }

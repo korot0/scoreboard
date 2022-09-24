@@ -15,6 +15,7 @@ body {
     justify-content: space-evenly;
     flex-direction: column;
     background-color: black;
+    opacity: 95%;
     width: 575px;
     height: 585px;
     text-align: center;
